@@ -11,8 +11,8 @@ num_of_bugs=$2;
 
 for i in $(seq 1 $num_of_bugs)
 do
-    project_buggy_location=$project_name/"$project_name"_buggy_"$i"/;
-    project_fixed_location=$project_name/"$project_name"_fixed_"$i"/;
+    project_buggy_location=/defects4j/projects/$project_name/"$project_name"_buggy_"$i"/;
+    project_fixed_location=/defects4j/projects/$project_name/"$project_name"_fixed_"$i"/;
 
     mkdir -p $project_buggy_location;
     mkdir -p $project_fixed_location;
